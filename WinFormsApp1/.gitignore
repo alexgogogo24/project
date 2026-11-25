@@ -1,0 +1,39 @@
+# Папки сборки и кэша
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# Файлы настроек пользователя Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Файлы NuGet пакетов
+*.nupkg
+**/[Pp]ackages/*
+!**/[Pp]ackages/build/
+
+# Временные файлы
+*.tmp
+*.tmp_proj
+*_wpftmp.csproj
+*.log
+*.vspscc
+*.vssscc
+.builds
+*.pidb
+*.svclog
+*.scc
+
+# Файлы кэша Resharper / Rider
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+# Исключения для базы данных (если вы используете локальный файл .mdf)
+# (Если вы подключаетесь через LocalDB, это можно оставить)
+*.mdf
+*.ldf
