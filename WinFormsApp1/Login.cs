@@ -21,6 +21,7 @@ namespace WinFormsApp1
             this.StartPosition = FormStartPosition.CenterScreen;
             this.FormBorderStyle = FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
+            this.FormClosed += (s, e) => Application.Exit();
 
             InitializeUI();
         }
@@ -85,8 +86,8 @@ namespace WinFormsApp1
                 {
                     CurrentUser.Id = Convert.ToInt32(dt.Rows[0]["Id_p"]);
 
-                    LoginForm mainForm = new LoginForm(); // заменить LoginForm на форму с выбором игр
-                    mainForm.Show();
+                    MainForm mainMenu = new MainForm();
+                    mainMenu.Show();
                     this.Hide();
                 }
                 else
